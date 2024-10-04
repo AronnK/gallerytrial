@@ -1,0 +1,46 @@
+/* @font-face {
+    font-family: 'Baby Monkey';
+    src: url('./Fonts/Baby Monkey.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+} */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between the title and the links */
+    padding: 10px 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 42px;
+    color: white;
+    /* font-family: 'Baby Monkey', sans-serif;  */
+  }
+  
+  .headerItems {
+    display: flex;
+    padding-right: 2%;
+    gap: 20px; /* Space between the items */
+  }
+  
+  .headerItems h2 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    cursor: pointer; /* Makes it look clickable */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .headerItems h2:hover {
+    color: lightgray; /* Changes color on hover */
+  }
+  .iconImage {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  

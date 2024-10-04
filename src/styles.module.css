@@ -1,0 +1,147 @@
+.mainContainer {
+    position: relative;
+    height: 100vh; 
+    width: 100vw; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .backgroundDiv {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+  }
+  .deck {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: none;
+    border-radius: 1rem;
+  }
+  
+  .deck > div {
+    background-size: auto 85%;
+    background-repeat: repeat;
+    background-position: center center;
+    width: 96vh;
+    max-width: 4000px;
+    height: 85vh;
+    max-height: 285px;
+    will-change: transform;
+    border-radius: 10px;
+    box-shadow: 0 12.5px 100px -10px rgba(4, 4, 4, 0.4), 0 10px 10px -10px rgba(0, 0, 0, 0.3);
+  }
+
+ .thumbnailContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mainImage img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.thumbnailList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 450px; 
+  overflow: hidden;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+  scroll-behavior: smooth;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.thumbnail:hover {
+  transform: scale(1.2);
+}
+
+  .polaroidContainer {  
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #dcf0f5; 
+  }
+  
+  .polaroidFrame {
+    overflow: hidden;
+    width: 400px;
+    height: auto;
+  }
+  
+  .polaroidContent {
+    overflow: hidden;
+    position: absolute;
+    width: 750px;
+    height: 650px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .polaroidContent img {
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    object-fit: scale-down;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: transparent;
+    color: black; 
+    border: none;
+    cursor: pointer;
+    font-size: 30px; 
+    font-weight: bold; 
+  }
+  
+  
